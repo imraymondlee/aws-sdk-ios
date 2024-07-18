@@ -13,6 +13,8 @@ Pod::Spec.new do |s|
                      :tag => s.version}
   s.requires_arc = true
   s.dependency 'AWSCore', '2.36.5'
-  s.source_files = 'AWSLocation/*.{h,m}'
+  s.swift_version = '5.7'
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.7' }
+  s.source_files = 'AWSLocation/*.{h,m}', 'AWSLocation/AWSLocationTracker/**/*.swift'
   s.resource_bundle = { 'AWSLocation' => ['AWSLocation/PrivacyInfo.xcprivacy']}
 end
