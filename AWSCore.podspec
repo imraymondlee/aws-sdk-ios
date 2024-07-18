@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
 
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.7' }
+  s.swift_version = '5.7'
   s.source_files = 'AWSCore/*.{h,m}', 'AWSCore/**/*.{h,m}', 'AWSCore/Logging/Extensions/*.swift'
   s.private_header_files = 'AWSCore/XMLWriter/**/*.h', 'AWSCore/FMDB/AWSFMDatabase+Private.h', 'AWSCore/Fabric/*.h', 'AWSCore/Mantle/extobjc/*.h', 'AWSCore/CognitoIdentity/AWSCognitoIdentity+Fabric.h'
   s.resource_bundle = { 'AWSCore' => ['AWSCore/PrivacyInfo.xcprivacy']}
